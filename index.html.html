@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="ja" class="scroll-smooth">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>朝日国際株式会社 - Asahi International Co., Ltd.</title>
+    <meta name="description" content="朝日国際株式会社は、日本と中国の輸出入貿易、旅行業務、不動産管理、太陽光発電システムなどを展開しています。" />
+    <meta name="keywords" content="朝日国際株式会社, Asahi International, 輸出入貿易, 旅行業, 不動産, 太陽光発電, 日本, 中国" />
+    <meta name="author" content="朝日国際株式会社" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <style>
+      body { font-family: 'Noto Sans JP', sans-serif; }
+      .hero-bg { background: linear-gradient(135deg, #1e3a8a, #2563eb); }
+      .fade-in { opacity: 0; transform: translateY(20px); transition: all 1s ease; }
+      .fade-in.show { opacity: 1; transform: translateY(0); }
+      .float { animation: float 6s ease-in-out infinite; }
+      @keyframes float {
+        0% { transform: translatey(0px); }
+        50% { transform: translatey(-10px); }
+        100% { transform: translatey(0px); }
+      }
+      .card-hover:hover { transform: scale(1.03); box-shadow: 0 10px 20px rgba(0,0,0,0.15); transition: all 0.3s ease; }
+    </style>
+  </head>
+  <body class="bg-gray-50 text-gray-800">
+
+    <!-- Language Switcher -->
+    <div class="fixed top-4 right-4 z-50">
+      <select id="langSwitcher" class="px-3 py-1 rounded bg-white shadow">
+        <option value="ja">日本語</option>
+        <option value="zh">中文</option>
+        <option value="en">English</option>
+      </select>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="bg-white shadow fixed w-full z-40 top-0">
+      <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+        <a href="#" class="text-xl font-bold text-blue-700 lang" data-ja="朝日国際株式会社" data-zh="朝日国际株式会社" data-en="Asahi International">朝日国際株式会社</a>
+        <div class="hidden md:flex space-x-6">
+          <a href="#about" class="hover:text-blue-600 lang" data-ja="会社概要" data-zh="公司介绍" data-en="About">会社概要</a>
+          <a href="#services" class="hover:text-blue-600 lang" data-ja="サービス" data-zh="服务内容" data-en="Services">サービス</a>
+          <a href="#team" class="hover:text-blue-600 lang" data-ja="チーム" data-zh="团队" data-en="Team">チーム</a>
+          <a href="#cases" class="hover:text-blue-600 lang" data-ja="事例紹介" data-zh="案例展示" data-en="Cases">事例紹介</a>
+          <a href="#contact" class="hover:text-blue-600 lang" data-ja="お問い合わせ" data-zh="联系我们" data-en="Contact">お問い合わせ</a>
+        </div>
+        <div class="md:hidden">
+          <button id="menuBtn" class="text-gray-700 focus:outline-none">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div id="mobileMenu" class="hidden bg-white md:hidden">
+        <a href="#about" class="block px-6 py-2 lang" data-ja="会社概要" data-zh="公司介绍" data-en="About">会社概要</a>
+        <a href="#services" class="block px-6 py-2 lang" data-ja="サービス" data-zh="服务内容" data-en="Services">サービス</a>
+        <a href="#team" class="block px-6 py-2 lang" data-ja="チーム" data-zh="团队" data-en="Team">チーム</a>
+        <a href="#cases" class="block px-6 py-2 lang" data-ja="事例紹介" data-zh="案例展示" data-en="Cases">事例紹介</a>
+        <a href="#contact" class="block px-6 py-2 lang" data-ja="お問い合わせ" data-zh="联系我们" data-en="Contact">お問い合わせ</a>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-bg text-white py-24 relative overflow-hidden mt-16">
+      <div class="container mx-auto px-6 text-center">
+        <img src="logo.png" alt="朝日国際株式会社" class="mx-auto w-32 mb-6 float" />
+        <h1 class="text-4xl md:text-6xl font-bold mb-4 fade-in lang" data-ja="朝日国際株式会社" data-zh="朝日国际株式会社" data-en="Asahi International Co., Ltd.">朝日国際株式会社</h1>
+        <p class="text-lg md:text-2xl mb-6 fade-in lang" data-ja="日本と中国をつなぐ 貿易・旅行・不動産・自然エネルギー" data-zh="连接日本与中国 贸易·旅游·不动产·新能源" data-en="Connecting Japan & China: Trade, Travel, Real Estate & Renewable Energy">日本と中国をつなぐ 貿易・旅行・不動産・自然エネルギー</p>
+        <a href="#about" class="bg-white text-blue-700 px-6 py-3 rounded-full font-semibold shadow-lg fade-in lang" data-ja="詳しく見る" data-zh="了解更多" data-en="Learn More">詳しく見る</a>
+      </div>
+      <div class="absolute inset-0 bg-gradient-to-r from-blue-800 to-transparent opacity-20"></div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-gray-100">
+      <div class="container mx-auto px-6 text-center">
+        <h2 class="text-3xl font-bold mb-6 lang" data-ja="会社概要" data-zh="公司介绍" data-en="About Us">会社概要</h2>
+        <p class="mb-4 lang" data-ja="朝日国際株式会社は平成26年に設立され、日本と中国の架け橋として多様な事業を展開しています。" data-zh="朝日国际株式会社成立于2014年，作为日本与中国的桥梁，开展多元化业务。" data-en="Asahi International Co., Ltd. was founded in 2014, serving as a bridge between Japan and China with diverse business operations.">朝日国際株式会社は平成26年に設立され、日本と中国の架け橋として多様な事業を展開しています。</p>
+        <p class="lang" data-ja="私たちの使命は、人々の生活をより豊かにするサービスを提供することです。" data-zh="我们的使命是提供让人们生活更美好的服务。" data-en="Our mission is to provide services that enrich people’s lives.">私たちの使命は、人々の生活をより豊かにするサービスを提供することです。</p>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="py-16 bg-white">
+      <div class="container mx-auto px-6 text-center">
+        <h2 class="text-3xl font-bold mb-12 lang" data-ja="サービス" data-zh="服务内容" data-en="Services">サービス</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="bg-gray-50 p-6 rounded-lg shadow card-hover">
+            <h3 class="text-xl font-semibold mb-3 lang" data-ja="貿易業" data-zh="贸易业务" data-en="Trading">貿易業</h3>
+            <p class="lang" data-ja="日本と中国を中心に幅広い商品の輸出入を行っています。" data-zh="以日本与中国为核心，进行多种商品的进出口。" data-en="We handle import/export of a wide range of goods mainly between Japan and China.">日本と中国を中心に幅広い商品の輸出入を行っています。</p>
+          </div>
+          <div class="bg-gray-50 p-6 rounded-lg shadow card-hover">
+            <h3 class="text-xl font-semibold mb-3 lang" data-ja="旅行業" data-zh="旅游业务" data-en="Travel">旅行業</h3>
+            <p class="lang" data-ja="団体旅行、医療ツアーなど多様な旅行サービスを提供します。" data-zh="提供团队游、医疗游等多种旅行服务。" data-en="We provide diverse travel services such as group tours and medical tours.">団体旅行、医療ツアーなど多様な旅行サービスを提供します。</p>
+          </div>
+          <div class="bg-gray-50 p-6 rounded-lg shadow card-hover">
+            <h3 class="text-xl font-semibold mb-3 lang" data-ja="不動産業務" data-zh="不动产业务" data-en="Real Estate">不動産業務</h3>
+            <p class="lang" data-ja="不動産の売買、賃貸、投資管理を行います。" data-zh="开展房地产买卖、租赁及投资管理。" data-en="We handle real estate sales, rentals, and investment management.">不動産の売買、賃貸、投資管理を行います。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="py-16 bg-gray-100">
+      <div class="container mx-auto px-6 text-center">
+        <h2 class="text-3xl font-bold mb-12 lang" data-ja="チーム" data-zh="团队" data-en="Our Team">チーム</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="bg-white p-6 rounded-lg shadow">
+            <img src="https://via.placeholder.com/150" class="mx-auto rounded-full mb-4" alt="Team member">
+            <h3 class="text-xl font-semibold lang" data-ja="代表取締役" data-zh="代表董事长" data-en="CEO">代表取締役</h3>
+            <p class="lang" data-ja="国際ビジネスの豊富な経験を持つリーダー。" data-zh="拥有丰富国际商务经验的领导者。" data-en="A leader with extensive experience in international business.">国際ビジネスの豊富な経験を持つリーダー。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cases Section -->
+    <section id="cases" class="py-16 bg-white">
+      <div class="container mx-auto px-6 text-center">
+        <h2 class="text-3xl font-bold mb-12 lang" data-ja="事例紹介" data-zh="案例展示" data-en="Case Studies">事例紹介</h2>
+        <div class="grid md:grid-cols-2 gap-8">
+          <div class="bg-gray-50 p-6 rounded-lg shadow card-hover">
+            <h3 class="text-xl font-semibold mb-3 lang" data-ja="貿易実績" data-zh="贸易案例" data-en="Trade Projects">貿易実績</h3>
+            <p class="lang" data-ja="日本の日用品や部品を中国へ輸出。" data-zh="将日本日用品及零部件出口至中国。" data-en="Exporting Japanese daily goods and parts to China.">日本の日用品や部品を中国へ輸出。</p>
+          </div>
+          <div class="bg-gray-50 p-6 rounded-lg shadow card-hover">
+            <h3 class="text-xl font-semibold mb-3 lang" data-ja="旅行ツアー" data-zh="旅游案例" data-en="Travel Tours">旅行ツアー</h3>
+            <p class="lang" data-ja="訪日団体旅行や医療ツアーを実施。" data-zh="实施访日团队游与医疗游。" data-en="Organizing group and medical tours to Japan.">訪日団体旅行や医療ツアーを実施。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Google Map Embed -->
+    <section class="py-16 bg-gray-100" id="map">
+      <div class="container mx-auto px-6 text-center">
+        <h2 class="text-3xl font-bold mb-6 lang" data-ja="所在地" data-zh="公司位置" data-en="Our Location">所在地</h2>
+        <div class="w-full h-96 rounded-lg overflow-hidden shadow-lg">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3323.254!2d130.418!3d33.590!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35419185d9a8cbe5%3A0xXXXX!2z44CSODEyLTAwMTEg56aP5bKh55yM56aP5bKh5biC5Zub5LqV55S65Y2X5Lqs5Yy65Zub44Gu5aSn77yR5LiB55uu77yR77yQ77yS!5e0!3m2!1sja!2sjp!4v0000000000" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-white">
+      <div class="container mx-auto px-6 text-center">
+        <h2 class="text-3xl font-bold mb-6 lang" data-ja="お問い合わせ" data-zh="联系我们" data-en="Contact Us">お問い合わせ</h2>
+        <p class="mb-6 lang" data-ja="ご相談・お問い合わせはこちらからどうぞ。" data-zh="如有咨询或问题，请在此联系我们。" data-en="Feel free to reach out for inquiries or consultation.">ご相談・お問い合わせはこちらからどうぞ。</p>
+        <form class="max-w-lg mx-auto">
+          <input type="text" placeholder="お名前 / Name" class="w-full mb-4 px-4 py-2 border rounded">
+          <input type="email" placeholder="メールアドレス / Email" class="w-full mb-4 px-4 py-2 border rounded">
+          <textarea placeholder="お問い合わせ内容 / Message" class="w-full mb-4 px-4 py-2 border rounded"></textarea>
+          <button class="bg-blue-600 text-white px-6 py-2 rounded font-semibold hover:bg-blue-700">送信</button>
+        </form>
+        <div class="mt-8">
+          <p>📍 〒812-0011 福岡市博多区博多駅前三丁目9番5号</p>
+          <p>📞 092-292-1658 | 📠 092-292-1982</p>
+          <p>✉ info@asahi-int.jp</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-6">
+      <div class="container mx-auto px-6 text-center">
+        <p class="mb-2">© 2025 朝日国際株式会社 | Asahi International Co., Ltd.</p>
+        <p class="text-sm">Powered by TailwindCSS | Designed with ❤️</p>
+      </div>
+    </footer>
+
+    <script>
+      // Fade-in animation
+      document.addEventListener("DOMContentLoaded", function(){
+        const elements = document.querySelectorAll('.fade-in');
+        elements.forEach((el, i) => {
+          setTimeout(()
